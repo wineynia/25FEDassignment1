@@ -14,12 +14,11 @@ html {
     height: 100vh;
 }
 body {
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-image: url('../images/about.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -64,20 +63,19 @@ header {
     background-color: var(--background-secondary);
     color: aliceblue;
 }
-.menu__item:visited {
+.menu__item.active {
     background-color: var(--background-secondary);
-    color: aliceblue;
+    color: #222;
+    font-weight: bold;
 }
 .main {
     flex: 1;
-    background: var(--background-secondary);
     padding: calc(var(--padding-basis) * 2);
     color: #222;
 }
 .section {
     display: flex;
     box-sizing: content-box;
-    background: var(--background-tertiary);
     border-radius: 8px;
     padding: var(--padding-basis);
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
@@ -118,22 +116,20 @@ img {
     font-size: 1rem;
     letter-spacing: 1px;
 }
-@media (min-width: 320px) {
+
+@media (min-width: 600px) {
+    .section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 900px) {
     .header h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .header h2 {
-        font-size: 1.1rem;
-    }
-    .menu div {
-        flex-direction: column;
-        gap: 12px;
-        padding: 8px 16px;
-    }
-    .main {
-        padding: var(--padding-basis);
-    }
-    .section {
-        padding: var(--padding-basis);
+        font-size: 1.5rem;
     }
 }

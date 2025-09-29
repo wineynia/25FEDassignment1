@@ -63,6 +63,11 @@ header {
     background-color: var(--background-secondary);
     color: aliceblue;
 }
+.menu__item.active {
+    background-color: var(--background-secondary);
+    color: #222;
+    font-weight: bold;
+}
 .main {
     flex: 1;
     padding: calc(var(--padding-basis) * 2);
@@ -117,22 +122,20 @@ header {
     font-size: 1rem;
     letter-spacing: 1px;
 }
-@media (max-width: 600px) {
+
+@media (min-width: 600px) {
+    .section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 900px) {
     .header h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .header h2 {
-        font-size: 1.1rem;
-    }
-    .menu div {
-        flex-direction: column;
-        gap: 12px;
-        padding: 8px 16px;
-    }
-    .main {
-        padding: var(--padding-basis);
-    }
-    .section {
-        padding: var(--padding-basis);
+        font-size: 1.5rem;
     }
 }

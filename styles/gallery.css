@@ -8,9 +8,13 @@
     --padding-basis: 16px;
 }
 body {
+    background-attachment: fixed;
+    background-image: url('../images/outerspace.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: var(--background-secondary);
     color: #222;
 }
 
@@ -28,7 +32,7 @@ body {
 .header h2 {
     margin: 0;
     font-size: 1.2rem;
-    color: var(--color-secondary);
+    color: var(--color-primary);
 }
 .header h3 {
     margin: 0;
@@ -57,11 +61,16 @@ body {
     background-color: var(--background-secondary);
     color: #222;
 }
+.menu__item.active {
+    background-color: var(--background-secondary);
+    color: #222;
+    font-weight: bold;
+}
 main {
     max-width: 800px;
     margin: 32px auto;
     padding: var(--padding-basis);
-    background: #fff;
+    color: var(--color-secondary);
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.07);
 }
@@ -89,6 +98,7 @@ main h2 {
     width: 100%;
     max-width: 100%;
     height: auto;
+    aspect-ratio: 2 / 1;
     display: block;
     border-bottom: 2px solid var(--background-quartenary);
 }
@@ -105,24 +115,19 @@ main h2 {
     margin-top: 32px;
 }
 
-@media (max-width: 600px) {
-    main {
-        max-width: 98vw;
-        padding: 8px;
-    }
-    .gallery-grid {
+@media (min-width: 600px) {
+    .section {
+        display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 16px;
-        margin: 16px 0;
+        gap: 1.5rem;
     }
-    .container {
-        max-width: 98vw;
-    }
+}
+
+@media (min-width: 900px) {
     .header h1 {
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
-    .menu__item {
-        font-size: 1rem;
-        padding: 6px 10px;
+    .header h2 {
+        font-size: 1.5rem;
     }
 }

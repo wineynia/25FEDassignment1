@@ -64,6 +64,10 @@ header {
     background-color: var(--background-secondary);
     color: aliceblue;
 }
+.menu__item:visited {
+    background-color: var(--background-secondary);
+    color: aliceblue;
+}
 .main {
     flex: 1;
     background: var(--background-secondary);

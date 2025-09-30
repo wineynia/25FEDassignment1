@@ -78,7 +78,7 @@ project/
 ## 🔗 How to Run
 1. Clone the repo:  
    ```bash
-   git clone https://github.com/YOUR-USERNAME/space-ipsum-website.git
+   git clone https://github.com/wineynia/space-ipsum-website.git
    cd space-ipsum-website
    ```
 2. Open `index.html` in a browser.  

@@ -2,24 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Space - Main Page</title>
     <link rel="stylesheet" href="./styles/index.css"/>
 </head>
-<body>
+
+<body class="home">
+
     <header class="header">
         <h1>Space Ipsum</h1>
         <h2>An outer-space inspired Lorem Ipsum generator</h2>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="menu">
+            <a href="index.html" class="menu__item active">Home</a>
+            <a href="about.html" class="menu__item">About</a>
+            <a href="gallery.html" class="menu__item">Gallery</a>
+            <a href="contact.html" class="menu__item">Contact</a>
+        </nav>
     </header>
-   <nav class="menu">
-    <div>
-        <a href="index.html" class="menu__item active">Home</a>
-        <a href="about.html" class="menu__item">About</a>
-        <a href="gallery.html" class="menu__item">Gallery</a>
-        <a href="contact.html" class="menu__item">Contact</a>
-    </div>
-    </nav>
+
     <main class="main">
+
         <section class="section">
             <div class="div">
                 <h2>John F. Kennedy<br>We Choose to go to <span>the Moon</span></h2>
@@ -27,18 +37,21 @@
                     There is no strife, no prejudice, no national conflict in outer space as yet. Its hazards are hostile to us all. Its conquest deserves the best of all mankind, and its opportunity for peaceful cooperation many never come again. But why, some say, <span class="span">the moon</span>? Why choose this as our goal? And they may well ask why climb the highest mountain? Why, 35 years ago, fly the Atlantic? Why does Rice play Texas?
                 </p>
             </div>
+
             <div class="div">
                 <h2>John F. Kennedy<br>We Choose to go to <span>the Moon</span></h2>
                 <p>
                     We choose to go to<span class="span">the moon</span>. We choose to go to <span>the moon</span> in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too.
                 </p>
             </div>
+
             <div class="div">
                 <h2>John F. Kennedy<br>We Choose to go to <span>the Moon</span></h2>
                 <p>
                     It is for these reasons that I regard the decision last year to shift our efforts in space from low to high gear as among the most important decisions that will be made during my incumbency in the office of the Presidency.
                 </p>
             </div>
+
             <div class="div">
                 <h2>John F. Kennedy<br>We Choose to go to <span>the Moon</span></h2>
                 <p>
@@ -46,20 +59,26 @@
                 </p>
             </div>
         </section>
+
         <section class="section">
+
             <div class="div">
                 <h2>A 1914 English translation by Harris Rackham reads:</h2>
                 <p>“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”</p>
             </div>
+
             <div class="div">
-                <img src="./images/outerspace-astonishing.png" alt="outerspace-astonishing"/>
+                <img src="./styles/images/outerspace-astonishing.png" alt="outer space-astonishing"/>
             </div>
+
             <div class="div">
                 <h2>In particular, the garbled words of lorem ipsum bear an unmistakable resemblance to sections 1.10.32-33 of Cicero's work, with the most notable passage excerpted below:</h2>
                 <p>“Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.”</p>
             </div>
         </section>
     </main>
-    <footer class="footer">&copy; 2025 Gabriella</footer>
+
+    <footer class="footer">&copy; 2025 Gabriella></footer>
+
 </body>
 </html>

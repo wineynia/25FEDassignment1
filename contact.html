@@ -2,26 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Space - Contact Page</title>
-    <link rel="stylesheet" href="./styles/contact.css"/>
+    <link rel="stylesheet" href="./styles/index.css"/>
 </head>
-<body>
+
+<body class="contact">
+
     <header class="header">
         <h1>Join Our Space Voyage</h1>
         <h2>An outer-space inspired Lorem Ipsum generator</h2>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="menu">
+            <a href="index.html" class="menu__item">Home</a>
+            <a href="about.html" class="menu__item">About</a>
+            <a href="gallery.html" class="menu__item">Gallery</a>
+            <a href="contact.html" class="menu__item active">Contact</a>
+        </nav>
     </header>
-    <nav class="menu">
-    <div>
-        <a href="index.html" class="menu__item">Home</a>
-        <a href="about.html" class="menu__item">About</a>
-        <a href="gallery.html" class="menu__item">Gallery</a>
-        <a href="contact.html" class="menu__item active">Contact</a>
-    </div>
-    </nav>
+
     <main class="main">
         <section>
-            <div>
+            <div class="div">
                 <h2>Frank Borman - One World</h2>
                 <p>
                     The view of the earth from the moon fascinated me - a small disk, 240,000 miles away. It was hard to think that that little thing held so many problems, so many frustrations. Raging nationalistic interests, famines, wars, pestilence don't show from that distance. I'm convinced that some wayward stranger in a space-craft, coming from some other part of the heavens, could look at earth and never know that it was inhabited at all. But the samw wayward stranger would certainly know instinctively that if the earth were inhabited, then the destinies of all who lived on it must inevitably be interwoven and joined. We are one hunk of ground, water, air, clouds, floating around in space. From out there it really is 'one world'.
@@ -30,29 +39,37 @@
                 <p>Fill out the form below to apply for our upcoming voyage!</p>
             </div>
         </section>
+
         <form action="mailto:Gabriella.Arif@edu.futuregames.se" method="post" enctype="text/plain" class="voyage-form">
             <fieldset class="voyage-fieldset">
                 <legend class="voyage-legend">Passenger Information</legend>
+
                 <div class="form-group">
                     <label for="fullname" class="form-label">Full Name:</label>
                     <input type="text" class="form-input" id="fullname" name="fullname" required/>
                 </div>
+
                 <div class="form-group">
                     <label for="age" class="form-label">Age:</label>
                     <input type="number" class="form-input" id="age" name="age" min="18" required/>
                 </div>
+
                 <div class="form-group">
                     <label for="email" class="form-label">Email:</label>
                     <input type="email" class="form-input" id="email" name="email" required/>
                 </div>
+
                 <div class="form-group">
                     <label for="experience" class="form-label">Space Experience:</label>
                     <textarea id="experience" class="form-textarea" name="experience" rows="3" required></textarea>
                 </div>
             </fieldset>
+
             <button type="submit" class="submit-button">Join the Voyage!</button>
         </form>
     </main>
+
     <footer class="footer">&copy; 2025 Gabriella</footer>
+
 </body>
 </html>

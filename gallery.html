@@ -2,48 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Space - Gallery</title>
-    <link rel="stylesheet" href="./styles/gallery.css"/>
+    <link rel="stylesheet" href="./styles/index.css"/>
 </head>
-<body>
+<body class="gallery">
     <header class="header">
         <h1>Space Ipsum</h1>
         <h2>An outer-space inspired Lorem Ipsum generator</h2>
         <h3>Gallery</h3>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="menu">
+            <a href="index.html" class="menu__item">Home</a>
+            <a href="about.html" class="menu__item">About</a>
+            <a href="gallery.html" class="menu__item active">Gallery</a>
+            <a href="contact.html" class="menu__item">Contact</a>
+        </nav>
     </header>
-    <nav class="menu">
-    <div>
-        <a href="index.html" class="menu__item">Home</a>
-        <a href="about.html" class="menu__item">About</a>
-        <a href="gallery.html" class="menu__item active">Gallery</a>
-        <a href="contact.html" class="menu__item">Contact</a>
-    </div>
-    </nav>
-    <main>
-<main>
+
+<main class="main">
     <h2>Gallery</h2>
+
     <div class="gallery-grid">
         <div class="gallery-item">
-            <img src="./images/about.png" alt="About">
+            <img src="./styles/images/about.png" alt="About">
         </div>
         <div class="gallery-item">
-            <img src="./images/background.png" alt="Background">
+            <img src="./styles/images/background.png" alt="Background">
         </div>
         <div class="gallery-item">
-            <img src="./images/contact.png" alt="Contact">
+            <img src="./styles/images/contact.png" alt="Contact">
         </div>
         <div class="gallery-item">
-            <img src="./images/home.png" alt="Home">
+            <img src="./styles/images/home.png" alt="Home">
         </div>
         <div class="gallery-item">
-            <img src="./images/sky-in-open-space.png" alt="sky-in-open-space">
+            <img src="./styles/images/sky-in-open-space.png" alt="sky-in-open-space">
         </div>
         <div class="gallery-item">
-            <img src="./images/outerspace-astonishing.png" alt="outerspace-astonishing">
+            <img src="./styles/images/outerspace-astonishing.png" alt="outer-space-astonishing">
         </div>
     </div>
 </main>
-    </main>
+
     <footer class="footer">&copy; 2025 Gabriella</footer>
+    
 </body>
+</html>

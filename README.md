@@ -27,15 +27,7 @@ project/
 ├── contact.html
 ├── styles/
 │   ├── index.css
-│   ├── about.css
-│   ├── gallery.css
-│   └── contact.css
 └── images/
-    ├── outerspace.png
-    ├── about.png
-    ├── home.png
-    ├── gallery1.png
-    └── contact.png
 ```
 
 ---
